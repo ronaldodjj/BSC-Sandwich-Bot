@@ -1,4 +1,4 @@
-## Sandwicher
+## BSC Sandwich Bot
 
 A professional-grade sandwiching bot targeting the BNB Smart Chain (BSC). It monitors the mempool via WebSocket, evaluates profitable opportunities, and attempts atomic sandwich trades using configurable risk/return parameters. Optional Telegram notifications keep you informed in real time.
 
@@ -155,4 +155,5 @@ Feel free to reach out for implementation assistance or integration support.
 
 ### Disclaimer
 This software is provided “AS IS”, without warranty of any kind. Use at your own risk. The authors and contributors are not responsible for losses or damages arising from the use of this software.
+
 
