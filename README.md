@@ -140,7 +140,7 @@ yarn test    # jest
 | 📲 WhatsApp | [wa.me/14105015750](https://wa.me/14105015750) |
 | 💬 Discord | [discordapp.com/users/985432160498491473](https://discordapp.com/users/985432160498491473)
 
-<div align="center">
+<div align="left">
     <a href="https://t.me/novustch" target="_blank"><img alt="Telegram"
         src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/></a>
     <a href="https://wa.me/14105015750" target="_blank"><img alt="WhatsApp"
@@ -149,11 +149,14 @@ yarn test    # jest
         src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"/></a>
 </div>
 
+</br>
+
 Feel free to reach out for implementation assistance or integration support.
 
 ---
 
 ### Disclaimer
 This software is provided “AS IS”, without warranty of any kind. Use at your own risk. The authors and contributors are not responsible for losses or damages arising from the use of this software.
+
 
 
